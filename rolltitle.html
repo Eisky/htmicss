@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title> 欢迎习大大莅临指导</title>
+    <script type="text/javascript">
+
+        function go(){
+        var content=document.title; //get title
+        var firstChar=content.charAt(0); //get the first letter of title
+        var sub=content.substring(1,content.length)// get the the rest letters, use substring
+        document.title=sub+firstChar; //combine letters
+        }
+        setInterval('go()',1000);
+    </script>
+</head>
+<body>
+
+
+</body>
+<html>

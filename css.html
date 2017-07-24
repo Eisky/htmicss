@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    </title><h3>WEBSITE</h3></title>
+</head>
+<body>
+<div>
+    <style>
+        .logo{
+        top:9px;
+        left:100px;
+        right:90px;
+        background-color:blue
+        }
+
+    </style>
+</div>
+<div class="logo">jjjjj
+
+
+</div>
+<div style="height:20px; border:20px solid red">new
+    <div style="height:30px; color:#999"></div>
+
+</div>
+<script type='text/javascript'>alert('alex');
+</script>
+<script src="js/oldboy.js"></script>
+
+</body>
+<form id='F1' action="https://www.sogou.com/web?" method="get">
+    <input type="text"/>
+    <input type='button' value="fakesubmit" onclick="foo();"/>
+</form>
+<script>
+function foo(){
+   document.getElementById('F1').submit();
+}
+</script>
+<input type='text' class="grey" id="tip" value="enter name" onfocus="Enter();" onblur="Leave();"/>
+
+<script type="text/javascript">
+    function Enter(){
+    var id = document.getElementById('tip')
+    id.className = 'black';
+    if(id.value=='enter name'||id.value.trim()==''){
+        id.value=''
+    }
+    }
+    function Leave(){
+    var id = document.getElementById('tip')
+    var va1 = id.value;
+    if(va1.length==0||id.value.trim()==''){
+    id.value = 'enter name'
+    id.className = 'grey';
+    }else{
+     id.className='black;
+     }
+    }
+</script>
+<div style="width=500px">
+    <div id="process" style="width:10%;background-color:green;height:10px" ></div>
+</div>
+<script>
+    pro = 10
+    function foo(){
+    var id=document.getElementById('process');
+    pro = pro + 10;
+    if(pro>100){
+     clearInterval(interval)
+    }else{
+    id.style.width=pro+'%';
+    }
+    }
+    interval = setInterval('foo()', 500)
+</script>
+</html>
